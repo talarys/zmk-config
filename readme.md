@@ -1,2 +1,3 @@
-# Talarys Nix powered Totem ZMK Config based on urobs.
+# Nix powered Totem ZMK Config.
+
 ![alt text](draw/base.svg)
