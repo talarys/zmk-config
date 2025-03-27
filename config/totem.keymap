@@ -152,13 +152,6 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 
-// Tap: space | Shift + tap: dot -> space -> sticky shift | Hold: nav layer.
-ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
-             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
-ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
-          tap-ms = <5>;)
-
 // Tap: backspace | Lshft + tap: delete | Rshft + tap: shift-delete.
 ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
               mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
@@ -181,7 +174,7 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS) // FN + NUM --> SYS.
+ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NUM --> SYS.
 
 #ifndef ZMK_BASE_LAYER
   #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                 \
@@ -192,7 +185,7 @@ ZMK_BASE_LAYER(Base,
          &kp Q         &kp W         &kp E         &kp R         &kp T       ,   &kp Y         &kp U         &kp I         &kp O         &kp P     ,
          &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F  &kp G       ,   &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr LGUI SQT,
 ___      &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &comma_morph  &dot_morph    &qexcl        ___,
-                                     ___           SMART_NUM    &lt_spc FN 0 ,   &lt NAV RET   MAGIC_SHIFT   ___
+                                     ___           SMART_NUM     &lt FN SPC  ,   &lt NAV RET   MAGIC_SHIFT   ___
 )
 
 
