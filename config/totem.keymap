@@ -398,10 +398,10 @@
 
         Nav {
             bindings = <
-        &trans    &trans     &trans     &trans      &kp PAGE_UP      &trans    &trans    &trans  &trans     &trans
-        &sk LGUI  &sk LALT   &sk LCTRL  &sk LSHIFT  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans    &kp LC(X)  &kp LC(C)  &kp LC(V)   &trans           &trans    &trans    &trans  &trans     &trans  &trans
-                             &trans     &trans      &trans           &trans    &trans    &trans
+        &trans    &trans     &trans     &trans      &kp PAGE_UP      &trans    &kp PG_UP  &kp HOME  &trans     &kp PRINTSCREEN
+        &sk LGUI  &sk LALT   &sk LCTRL  &sk LSHIFT  &kp PAGE_DOWN    &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans  &trans    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp PG_DN        &trans    &kp PG_DN  &kp END   &trans     &trans           &trans
+                             &trans     &trans      &trans           &trans    &trans     &trans
             >;
         };
 
