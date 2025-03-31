@@ -1,3 +1,3 @@
 # Nix powered Totem ZMK Config.
 
-![alt text](draw/base.svg)
+![alt text](draw/totem.svg)

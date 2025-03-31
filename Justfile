@@ -84,8 +84,8 @@ clean-nix:
 draw:
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/totem.keymap">"{{ draw }}/base.yaml"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -j "{{ config }}/totem.json" >"{{ draw }}/base.svg"
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/totem.keymap">"{{ draw }}/totem.yaml"
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/totem.yaml" -j "{{ config }}/totem.json" >"{{ draw }}/totem.svg"
 
 # initialize west
 init:
