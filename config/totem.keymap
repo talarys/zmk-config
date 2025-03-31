@@ -397,10 +397,10 @@
 
         Nav {
             bindings = <
-        &trans    &trans     &trans     &trans      &kp PAGE_UP      &trans    &kp HOME   &trans     &kp END    &kp PRINTSCREEN
-        &sk LGUI  &sk LALT   &sk LCTRL  &sk LSHIFT  &kp PAGE_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp PG_DN        &trans    &kp PG_DN  &kp PG_UP  &trans     &trans           &trans
-                             &trans     &trans      &trans           &trans    &trans     &trans
+        &trans    &trans     &msc SCRL_UP  &msc SCRL_DOWN  &kp PG_UP    &trans    &kp HOME        &trans        &kp END    &kp PRINTSCREEN
+        &sk LGUI  &sk LALT   &sk LCTRL     &sk LSHIFT      &trans       &kp LEFT  &kp DOWN        &kp UP        &kp RIGHT  &trans
+&trans  &trans    &kp LC(X)  &kp LC(C)     &kp LC(V)       &kp PG_DN    &trans    &msc SCRL_DOWN  &msc SCRL_UP  &trans     &trans           &trans
+                             &trans        &trans          &trans       &trans    &trans          &trans
             >;
         };
 
@@ -410,15 +410,6 @@
         &trans  &trans  &trans  &trans  &trans    &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &trans  &trans
                         &trans  &trans  &trans    &mkp MB1        &mkp MB2        &mkp MB3
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
