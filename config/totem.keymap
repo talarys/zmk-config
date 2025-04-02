@@ -146,134 +146,6 @@
     combos {
         compatible = "zmk,combos";
 
-        At {
-            bindings = <&kp AT>;
-            key-positions = <1 11>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Hash {
-            bindings = <&kp HASH>;
-            key-positions = <2 12>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <3 13>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <4 14>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <11 22>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <23 12>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 13>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <25 14>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Caret {
-            bindings = <&kp CARET>;
-            key-positions = <15 5>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Plus {
-            bindings = <&kp PLUS>;
-            key-positions = <6 16>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Asterisk {
-            bindings = <&kp ASTRK>;
-            key-positions = <17 7>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <8 18>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Under {
-            bindings = <&kp UNDER>;
-            key-positions = <26 15>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Minus {
-            bindings = <&kp MINUS>;
-            key-positions = <16 27>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Slash {
-            bindings = <&kp SLASH>;
-            key-positions = <17 28>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
-        Pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <18 29>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_SLOW>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-        };
-
         Esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
@@ -321,38 +193,6 @@
             timeout-ms = <COMBO_TERM_FAST>;
             require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
-
-        LPar {
-            bindings = <&lpar_lt>;
-            key-positions = <16 17>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        };
-
-        RPar {
-            bindings = <&rpar_gt>;
-            key-positions = <17 18>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        };
-
-        LBrack {
-            bindings = <&kp LBKT>;
-            key-positions = <27 28>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        };
-
-        RBrack {
-            bindings = <&kp RBKT>;
-            key-positions = <29 28>;
-            layers = <0>;
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_IDLE_FAST>;
-        };
     };
 
     keymap {
@@ -361,10 +201,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp Q        &kp W        &kp E         &kp R          &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P
-       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G        &kp H    &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B        &kp N    &kp M         &comma_semic  &dot_colon   &que_ex                 &to 0
-                                 &lt 5 ESC     &lt 4 TAB      &kp SPACE    &kp RET  &lt 2 BSPC    &lt 3 DEL
+       &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
+       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
+&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH               &to 0
+                                 &lt 5 ESC     &lt 4 TAB      &lt 6 SPACE    &lt 6 ENTER  &lt 2 BSPC    &lt 3 DEL
             >;
         };
 
@@ -415,10 +255,10 @@
 
         Sym {
             bindings = <
-        &trans  &kp AT  &kp HASH  &kp DLLR  &trans    &kp AMPS   &kp LBKT  &kp RBKT  &trans  &trans
-        &trans  &trans  &trans    &trans    &trans    &kp PIPE   &kp LPAR  &kp RPAR  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans    &kp TILDE  &kp LBRC  &kp RBRC  &trans  &trans  &trans
-                        &trans    &trans    &trans    &trans     &trans    &trans
+        &kp EXCL  &kp AT     &kp HASH   &kp DLLR        &kp PRCNT    &kp ASTRK  &kp EQUAL  &kp COLON  &kp SEMI  &kp PLUS
+        &kp LGUI  &kp LALT   &kp LCTRL  &kp LEFT_SHIFT  &kp CARET    &kp SLASH  &kp LPAR   &kp LBRC   &kp LBKT  &kp MINUS
+&trans  &trans    &kp GRAVE  &kp BSLH   &kp PIPE        &kp AMPS     &kp TILDE  &kp RPAR   &kp RBRC   &kp RBKT  &kp UNDER  &trans
+                             &trans     &trans          &trans       &trans     &trans     &trans
             >;
         };
     };
