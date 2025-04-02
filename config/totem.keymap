@@ -2,7 +2,9 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
@@ -193,6 +195,11 @@
             timeout-ms = <COMBO_TERM_FAST>;
             require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
+
+        Sys {
+            bindings = <&mo 7>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
@@ -259,6 +266,15 @@
         &kp LGUI  &kp LALT   &kp LCTRL  &kp LEFT_SHIFT  &kp CARET    &kp SLASH  &kp LPAR   &kp LBRC   &kp LBKT  &kp MINUS
 &trans  &trans    &kp GRAVE  &kp BSLH   &kp PIPE        &kp AMPS     &kp TILDE  &kp RPAR   &kp RBRC   &kp RBKT  &kp UNDER  &trans
                              &trans     &trans          &trans       &trans     &trans     &trans
+            >;
+        };
+
+        Sys {
+            bindings = <
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR     &trans       &out OUT_USB  &out OUT_BLE  &trans  &trans
+        &trans        &trans        &trans        &trans        &bootloader    &bootloader  &trans        &trans        &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &sys_reset     &sys_reset   &trans        &trans        &trans  &trans  &trans
+                                    &trans        &trans        &trans         &trans       &trans        &trans
             >;
         };
     };
