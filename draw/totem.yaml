@@ -29,14 +29,14 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: '?', s: '!'}
+  - ','
+  - .
+  - /
   - {t: Base, h: toggle}
   - {t: ESC, h: Mouse}
   - {t: TAB, h: Nav}
-  - SPACE
-  - RET
+  - {t: SPACE, h: Sym}
+  - {t: ENTER, h: Sym}
   - {t: BSPC, h: Num}
   - {t: DEL, h: Fn}
   Gaming:
@@ -235,93 +235,45 @@ layers:
   - '&mkp MB2'
   - '&mkp MB3'
   Sym:
-  - {t: ▽, type: trans}
+  - '!'
   - '@'
   - '#'
   - $
-  - {t: ▽, type: trans}
-  - '&'
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '|'
+  - '%'
+  - '*'
+  - '='
+  - ':'
+  - ;
+  - +
+  - LGUI
+  - LALT
+  - LCTRL
+  - LEFT SHIFT
+  - ^
+  - /
   - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '~'
   - '{'
+  - '['
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - \
+  - '|'
+  - '&'
+  - '~'
+  - )
   - '}'
+  - ']'
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [1, 11]
-  k: '@'
-  l: [Base]
-- p: [2, 12]
-  k: '#'
-  l: [Base]
-- p: [3, 13]
-  k: $
-  l: [Base]
-- p: [4, 14]
-  k: '%'
-  l: [Base]
-- p: [11, 22]
-  k: '`'
-  l: [Base]
-- p: [23, 12]
-  k: \
-  l: [Base]
-- p: [24, 13]
-  k: '='
-  l: [Base]
-- p: [25, 14]
-  k: '~'
-  l: [Base]
-- p: [15, 5]
-  k: ^
-  l: [Base]
-- p: [6, 16]
-  k: +
-  l: [Base]
-- p: [17, 7]
-  k: '*'
-  l: [Base]
-- p: [8, 18]
-  k: '&'
-  l: [Base]
-- p: [26, 15]
-  k: _
-  l: [Base]
-- p: [16, 27]
-  k: '-'
-  l: [Base]
-- p: [17, 28]
-  k: /
-  l: [Base]
-- p: [18, 29]
-  k: '|'
-  l: [Base]
 - p: [1, 2]
   k: ESC
   l: [Base]
@@ -339,16 +291,4 @@ combos:
   l: [Base]
 - p: [8, 7]
   k: DEL
-  l: [Base]
-- p: [16, 17]
-  k: {t: (, s: <}
-  l: [Base]
-- p: [17, 18]
-  k: {t: ), s: '>'}
-  l: [Base]
-- p: [27, 28]
-  k: '['
-  l: [Base]
-- p: [29, 28]
-  k: ']'
   l: [Base]
