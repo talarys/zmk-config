@@ -145,7 +145,6 @@
         };
     };
 
-
     combos {
         compatible = "zmk,combos";
 
@@ -364,19 +363,10 @@
         Base {
             display-name = "Base";
             bindings = <
-       &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
-       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH               &to 0
-                                 &lt 5 ESC     &lt 4 TAB      &lt 6 SPACE    &lt 6 ENTER  &lt 2 BSPC    &lt 3 DEL
-            >;
-        };
-
-        Gaming {
-            bindings = <
-       &kp TAB    &kp Q  &kp W      &kp E       &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LSHFT  &kp A  &kp S      &kp D       &kp F        &trans  &trans  &trans  &trans  &trans
-&to 0  &kp LCTRL  &kp Z  &kp X      &kp C       &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                         &lt 3 ESC  &lt 2 LALT  &kp SPACE    &trans  &trans  &trans
+        &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
+        &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
+&trans  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH               &to 0
+                                  &lt 4 ESC     &lt 3 TAB      &lt 5 SPACE    &lt 5 ENTER  &lt 1 BSPC    &lt 2 DEL
             >;
         };
 
@@ -400,10 +390,10 @@
 
         Nav {
             bindings = <
-        &trans    &trans     &msc SCRL_UP  &msc SCRL_DOWN  &kp PG_UP    &trans    &kp HOME        &trans        &kp END    &kp PRINTSCREEN
-        &sk LGUI  &sk LALT   &sk LCTRL     &sk LSHIFT      &trans       &kp LEFT  &kp DOWN        &kp UP        &kp RIGHT  &trans
-&trans  &trans    &kp LC(X)  &kp LC(C)     &kp LC(V)       &kp PG_DN    &trans    &msc SCRL_DOWN  &msc SCRL_UP  &trans     &trans           &trans
-                             &trans        &trans          &trans       &trans    &trans          &trans
+        &trans    &msc SCRL_UP  &trans     &msc SCRL_DOWN  &kp PG_UP    &kp HOME  &msc SCRL_DOWN  &kp UP    &msc SCRL_UP  &trans
+        &sk LGUI  &sk LALT      &sk LCTRL  &sk LSHIFT      &trans       &trans    &kp LEFT        &kp DOWN  &kp RIGHT     &trans
+&trans  &trans    &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp PG_DN    &kp END   &kp PAGE_DOWN   &trans    &kp PG_UP     &trans  &trans
+                                &trans     &trans          &trans       &trans    &trans          &trans
             >;
         };
 
@@ -431,6 +421,15 @@
         &trans        &trans        &trans        &trans        &bootloader    &bootloader  &trans        &trans        &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &sys_reset     &sys_reset   &trans        &trans        &trans  &trans  &trans
                                     &trans        &trans        &trans         &trans       &trans        &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
