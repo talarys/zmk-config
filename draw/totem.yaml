@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
   - {t: '''', h: RGUI}
-  - {t: Gaming, h: toggle}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -39,45 +39,6 @@ layers:
   - {t: ENTER, h: Sym}
   - {t: BSPC, h: Num}
   - {t: DEL, h: Fn}
-  Gaming:
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LSHFT
-  - A
-  - S
-  - D
-  - F
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Base, h: toggle}
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ESC, h: Fn}
-  - {t: LALT, h: Num}
-  - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Num:
   - '0'
   - '7'
@@ -158,23 +119,23 @@ layers:
   - {type: held}
   Nav:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - PG UP
-  - {t: ▽, type: trans}
   - HOME
+  - '&msc SCRL_DOWN'
+  - UP
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
-  - END
-  - PRINTSCREEN
   - {t: LGUI, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHIFT, h: sticky}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
-  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,10 +144,10 @@ layers:
   - Ctl+C
   - Ctl+V
   - PG DN
+  - END
+  - PAGE DOWN
   - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - {t: ▽, type: trans}
+  - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -301,6 +262,45 @@ layers:
   - {t: ▽, type: trans}
   - '&sys_reset'
   - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '8':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
