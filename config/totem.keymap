@@ -145,8 +145,137 @@
         };
     };
 
+
     combos {
         compatible = "zmk,combos";
+
+        At {
+            bindings = <&kp AT>;
+            key-positions = <1 11>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <11 22>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <23 12>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <24 13>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <25 14>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Caret {
+            bindings = <&kp CARET>;
+            key-positions = <15 5>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 16>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Asterisk {
+            bindings = <&kp ASTRK>;
+            key-positions = <17 7>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <8 18>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Under {
+            bindings = <&kp UNDER>;
+            key-positions = <26 15>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 27>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Slash {
+            bindings = <&kp SLASH>;
+            key-positions = <17 28>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
+
+        Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 29>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+        };
 
         Esc {
             bindings = <&kp ESC>;
@@ -196,9 +325,36 @@
             require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
-        Sys {
-            bindings = <&mo 7>;
-            key-positions = <34 35>;
+        LPar {
+            bindings = <&lpar_lt>;
+            key-positions = <16 17>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+        };
+
+        RPar {
+            bindings = <&rpar_gt>;
+            key-positions = <17 18>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+        };
+
+        LBrack {
+            bindings = <&kp LBKT>;
+            key-positions = <27 28>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
+        };
+
+        RBrack {
+            bindings = <&kp RBKT>;
+            key-positions = <29 28>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
     };
 
