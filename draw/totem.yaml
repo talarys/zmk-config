@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Ctl+LEFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - +
   - '*'
   - '&'
-  - {t: ▽, type: trans}
+  - ':'
   - {t: ▽, type: trans}
   - '['
   - '{'
@@ -176,7 +176,7 @@ layers:
   - )
   - '}'
   - ']'
-  - {t: ▽, type: trans}
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
@@ -187,7 +187,7 @@ layers:
   - '-'
   - /
   - '|'
-  - {t: ▽, type: trans}
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
