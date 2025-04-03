@@ -325,41 +325,65 @@
         Gt {
             bindings = <&kp GREATER_THAN>;
             key-positions = <15 16>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         RPar {
             bindings = <&kp RPAR>;
             key-positions = <17 16>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         RBrc {
             bindings = <&kp RBRC>;
             key-positions = <17 18>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         RBkt {
             bindings = <&kp RBKT>;
             key-positions = <19 18>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         Lt {
             bindings = <&kp LT>;
             key-positions = <14 13>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         LPar {
             bindings = <&kp LPAR>;
             key-positions = <13 12>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         LBrc {
             bindings = <&kp LBRC>;
             key-positions = <12 11>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
 
         LBkt {
             bindings = <&kp LBKT>;
             key-positions = <11 10>;
+            layers = <0>;
+            timeout-ms = <COMBO_TERM_FAST>;
+            require-prior-idle-ms = <COMBO_IDLE_FAST>;
         };
     };
 
