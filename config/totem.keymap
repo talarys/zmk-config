@@ -363,7 +363,7 @@
             bindings = <
         &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
         &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&trans  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH               &to 0
+&trans  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &to 0
                                   &lt 3 ESC     &lt 2 TAB      &lt 4 SPACE    &lt 4 ENTER  &lt 1 BSPC    &lt 0 DEL
             >;
         };
@@ -397,10 +397,10 @@
 
         Sym {
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    &kp AMPS   &kp LBKT  &kp RBKT  &trans     &trans
-        &kp GRAVE  &kp ASTRK  &kp PLUS   &kp EQUAL  &kp CARET    &kp PIPE   &kp LPAR  &kp RPAR  &kp COLON  &kp SEMI
-&trans  &trans     &kp SLASH  &kp MINUS  &kp BSLH   &kp UNDER    &kp TILDE  &kp LBRC  &kp RBRC  &kp LT     &kp GT    &trans
-                              &trans     &trans     &trans       &trans     &trans    &trans
+        &kp EXCL  &kp AT     &kp HASH  &kp DLLR              &kp PRCNT    &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPERSAND  &trans
+        &trans    &kp LBKT   &kp LBRC  &kp LEFT_PARENTHESIS  &kp LT       &kp GT     &kp RPAR   &kp RBRC   &kp RBKT       &trans
+&trans  &trans    &kp GRAVE  &kp BSLH  &kp EQUAL             &kp TILDE    &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE       &trans  &trans
+                             &trans    &trans                &trans       &trans     &trans     &trans
             >;
         };
     };
