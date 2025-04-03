@@ -29,8 +29,8 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - /
   - {t: Base, h: toggle}
   - {t: ESC, h: Mouse}
@@ -162,32 +162,32 @@ layers:
   - '#'
   - $
   - '%'
+  - ^
+  - +
+  - '*'
   - '&'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
+  - '{'
+  - (
+  - <
+  - '>'
+  - )
+  - '}'
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '`'
-  - '*'
-  - +
-  - '='
-  - ^
-  - '|'
-  - (
-  - )
-  - ':'
-  - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
-  - '-'
   - \
-  - _
+  - '='
   - '~'
-  - '{'
-  - '}'
-  - <
-  - '>'
+  - _
+  - '-'
+  - /
+  - '|'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
