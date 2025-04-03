@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: totem}
+layout: {zmk_keyboard: totem}
 layers:
   Base:
   - Q
@@ -11,17 +11,17 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Gui}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
   - {t: F, h: LSHIFT}
   - G
   - H
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: '''', h: Gui}
-  - {type: trans}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: '''', h: RGUI}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -33,12 +33,12 @@ layers:
   - {t: ., s: ':'}
   - /
   - {t: Base, h: toggle}
-  - {t: Esc, h: Mouse}
-  - {t: Tab, h: Nav}
-  - {t: Spc, h: Sym}
+  - {t: ESC, h: Mouse}
+  - {t: TAB, h: Nav}
+  - {t: SPACE, h: Sym}
   - {t: ENTER, h: Sym}
-  - {t: Bspc, h: Num}
-  - {t: Del, h: Base}
+  - {t: BSPC, h: Num}
+  - {t: DEL, h: Base}
   Num:
   - '1'
   - '2'
@@ -50,17 +50,17 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Gui
-  - Alt
-  - Ctrl
-  - Shift
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
   - F11
   - F12
   - LSHIFT
-  - Ctrl
-  - Alt
-  - Gui
-  - {type: trans}
+  - LCTRL
+  - LALT
+  - LGUI
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -71,88 +71,88 @@ layers:
   - F8
   - F9
   - F10
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: trans}
+  - {t: ▽, type: trans}
   Nav:
-  - {type: trans}
-  - Scroll ↑
-  - {type: trans}
-  - Scroll ↓
-  - PgUp
-  - Home
-  - Scroll ↓
-  - ↑
-  - Scroll ↑
-  - {type: trans}
-  - {t: Gui, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - PG UP
+  - HOME
+  - '&msc SCRL_DOWN'
+  - UP
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
   - {t: LSHIFT, h: sticky}
-  - {type: trans}
-  - {type: trans}
-  - ←
-  - ↓
-  - →
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - Cut
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+X
   - Ctl+C
   - Ctl+V
-  - PgDn
-  - End
+  - PG DN
+  - END
   - PAGE DOWN
-  - {type: trans}
-  - PgUp
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - PG UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Mouse:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - Scroll ↑
-  - Mouse ↑
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - Scroll ←
-  - Scroll ↓
-  - Scroll ↑
-  - Scroll →
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
@@ -166,19 +166,19 @@ layers:
   - +
   - '*'
   - '&'
-  - {type: trans}
-  - {type: trans}
-  - {t: '[', right: '{'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
   - '{'
   - (
   - <
   - '>'
   - )
   - '}'
-  - {t: ']', right: '}'}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '`'
   - \
   - '='
@@ -187,14 +187,14 @@ layers:
   - '-'
   - /
   - '|'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [1, 11]
   k: '@'
@@ -245,7 +245,7 @@ combos:
   k: '|'
   l: [Base]
 - p: [1, 2]
-  k: Esc
+  k: ESC
   l: [Base]
 - p: [22, 23]
   k: Ctl+C
@@ -254,13 +254,13 @@ combos:
   k: Ctl+V
   l: [Base]
 - p: [24, 22]
-  k: Cut
+  k: Ctl+X
   l: [Base]
 - p: [6, 7]
   k: BACKSPACE
   l: [Base]
 - p: [8, 7]
-  k: Del
+  k: DEL
   l: [Base]
 - p: [15, 16]
   k: '>'
@@ -272,7 +272,7 @@ combos:
   k: '}'
   l: [Base]
 - p: [19, 18]
-  k: {t: ']', right: '}'}
+  k: ']'
   l: [Base]
 - p: [14, 13]
   k: <
@@ -284,5 +284,5 @@ combos:
   k: '{'
   l: [Base]
 - p: [11, 10]
-  k: {t: '[', right: '{'}
+  k: '['
   l: [Base]
