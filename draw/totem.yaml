@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - PG UP
-  - HOME
+  - PG UP
   - '&msc SCRL_DOWN'
   - UP
   - '&msc SCRL_UP'
@@ -105,10 +105,10 @@ layers:
   - Ctl+C
   - Ctl+V
   - PG DN
-  - END
-  - PAGE DOWN
-  - {t: ▽, type: trans}
   - PG UP
+  - HOME
+  - {t: ▽, type: trans}
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,19 +119,19 @@ layers:
   - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
+  - MUTE
+  - VOLUME UP
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - '&mmv MOVE_UP'
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Ctl+LEFT
+  - VOL DN
+  - Gui+Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
@@ -141,13 +141,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+Gui+D
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -166,7 +166,7 @@ layers:
   - +
   - '*'
   - '&'
-  - {t: ▽, type: trans}
+  - ':'
   - {t: ▽, type: trans}
   - '['
   - '{'
@@ -176,7 +176,7 @@ layers:
   - )
   - '}'
   - ']'
-  - {t: ▽, type: trans}
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
@@ -187,7 +187,7 @@ layers:
   - '-'
   - /
   - '|'
-  - {t: ▽, type: trans}
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
