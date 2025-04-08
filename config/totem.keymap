@@ -349,7 +349,7 @@
             bindings = <
         &trans    &msc SCRL_UP  &trans     &msc SCRL_DOWN  &kp PG_UP    &kp PG_UP  &msc SCRL_DOWN  &kp UP    &msc SCRL_UP  &trans
         &sk LGUI  &sk LALT      &sk LCTRL  &sk LSHIFT      &trans       &trans     &kp LEFT        &kp DOWN  &kp RIGHT     &trans
-&trans  &trans    &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp PG_DN    &kp PG_UP  &kp HOME        &trans    &kp END       &trans  &trans
+&trans  &trans    &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp PG_DN    &kp PG_DN  &kp HOME        &trans    &kp END       &trans  &trans
                                 &trans     &trans          &trans       &trans     &trans          &trans
             >;
         };
