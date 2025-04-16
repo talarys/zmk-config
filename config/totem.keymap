@@ -329,10 +329,19 @@
         Base {
             display-name = "Base";
             bindings = <
-        &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
-        &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&trans  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &to 0
-                                  &lt 3 ESC     &lt 2 TAB      &lt 4 SPACE    &lt 4 ENTER  &lt 1 BSPC    &lt 0 DEL
+       &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
+       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
+&to 1  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &to 0
+                                 &lt 4 ESC     &lt 3 TAB      &lt 5 SPACE    &lt 5 ENTER  &lt 2 BSPC    &lt 0 DEL
+            >;
+        };
+
+        Gaming {
+            bindings = <
+         &kp TAB    &kp Q  &kp W    &kp E     &kp R        &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A  &kp S    &kp D     &kp F        &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp LCTRL  &kp Z  &kp X    &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &to 0
+                           &kp ESC  &kp LALT  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
