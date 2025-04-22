@@ -331,8 +331,17 @@
             bindings = <
          &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
          &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&kp ESC  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &kp CAPSLOCK
-                                   &lt 3 ESC     &lt 2 TAB      &lt 4 SPACE    &lt 4 ENTER  &lt 1 BSPC    &lt 0 DEL
+&kp ESC  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &kp DEL
+                                   &kp ESC       &lt 3 TAB      &lt 1 SPACE    &lt 2 ENTER  &lt 4 BSPC    &kp DEL
+            >;
+        };
+
+        Sym {
+            bindings = <
+        &kp EXCL  &kp AT     &kp HASH  &kp DLLR              &kp PRCNT    &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPERSAND  &kp COLON
+        &trans    &kp LBKT   &kp LBRC  &kp LEFT_PARENTHESIS  &kp LT       &kp GT     &kp RPAR   &kp RBRC   &kp RBKT       &kp SEMI
+&trans  &trans    &kp GRAVE  &kp BSLH  &kp EQUAL             &kp TILDE    &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE       &kp QUESTION  &trans
+                             &trans    &trans                &trans       &trans     &trans     &trans
             >;
         };
 
@@ -345,15 +354,6 @@
             >;
         };
 
-        Nav {
-            bindings = <
-        &trans    &msc SCRL_UP  &trans     &msc SCRL_DOWN  &kp PG_UP    &kp PG_UP  &msc SCRL_DOWN  &kp UP    &msc SCRL_UP  &trans
-        &sk LGUI  &sk LALT      &sk LCTRL  &sk LSHIFT      &trans       &trans     &kp LEFT        &kp DOWN  &kp RIGHT     &trans
-&trans  &trans    &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp PG_DN    &kp PG_DN  &kp HOME        &trans    &kp END       &trans  &trans
-                                &trans     &trans          &trans       &trans     &trans          &trans
-            >;
-        };
-
         Mouse {
             bindings = <
         &trans  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_PLAY_PAUSE   &trans    &trans    &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans
@@ -363,12 +363,12 @@
             >;
         };
 
-        Sym {
+        Nav {
             bindings = <
-        &kp EXCL  &kp AT     &kp HASH  &kp DLLR              &kp PRCNT    &kp CARET  &kp PLUS   &kp ASTRK  &kp AMPERSAND  &kp COLON
-        &trans    &kp LBKT   &kp LBRC  &kp LEFT_PARENTHESIS  &kp LT       &kp GT     &kp RPAR   &kp RBRC   &kp RBKT       &kp SEMI
-&trans  &trans    &kp GRAVE  &kp BSLH  &kp EQUAL             &kp TILDE    &kp UNDER  &kp MINUS  &kp SLASH  &kp PIPE       &kp QUESTION  &trans
-                             &trans    &trans                &trans       &trans     &trans     &trans
+        &trans    &msc SCRL_UP  &trans     &msc SCRL_DOWN  &kp PG_UP    &kp PG_UP  &msc SCRL_DOWN  &kp UP    &msc SCRL_UP  &trans
+        &sk LGUI  &sk LALT      &sk LCTRL  &sk LSHIFT      &trans       &trans     &kp LEFT        &kp DOWN  &kp RIGHT     &trans
+&trans  &trans    &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp PG_DN    &kp PG_DN  &kp HOME        &trans    &kp END       &trans  &trans
+                                &trans     &trans          &trans       &trans     &trans          &trans
             >;
         };
     };
