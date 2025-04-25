@@ -25,7 +25,7 @@ jobs:
           path: ./artifacts
 
       - name: Compress artifacts
-        run: zip -r firmware.zip ./artifacts/firmware/
+        run: zip -rj firmware.zip ./artifacts/firmware/
 
       - name: Create GitHub Release
         id: create_release
