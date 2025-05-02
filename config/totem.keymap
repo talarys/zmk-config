@@ -141,6 +141,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        gaming_switch: gaming_switch {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GAMING_SWITCH";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&to 5>;
+        };
     };
 
     combos {
@@ -331,7 +338,7 @@
             bindings = <
          &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
          &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
-&kp ESC  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &kp DEL
+&kp ESC  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &gaming_switch
                                    &kp ESC       &lt 3 TAB      &lt 1 SPACE    &lt 2 ENTER  &lt 4 BSPC    &kp DEL
             >;
         };
@@ -369,6 +376,15 @@
         &trans  &kp LG(LC(LEFT))  &kp C_VOL_DN     &kp LG(LC(RIGHT))  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans            &kp LC(LG(D))    &trans             &trans    &trans  &mkp MB1        &mkp MB2        &mkp MB3         &trans  &trans
                                   &trans           &trans             &trans    &trans  &trans          &trans
+            >;
+        };
+
+        Gaming {
+            bindings = <
+         &kp TAB    &kp Q  &kp W    &kp E     &kp R        &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A  &kp S    &kp D     &kp F        &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp LCTRL  &kp Z  &kp X    &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &gaming_switch
+                           &kp ESC  &kp LALT  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
