@@ -154,7 +154,7 @@
         compatible = "zmk,combos";
 
         Shift {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mt LEFT_SHIFT CAPS>;
             key-positions = <34 35>;
         };
     };
