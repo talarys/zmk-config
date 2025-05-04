@@ -196,7 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Gaming2:
-  - T
+  - Alt+TAB
   - '1'
   - '2'
   - '3'
@@ -217,11 +217,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - G
+  - LEFT ALT
   - F1
   - F2
   - F3
-  - LALT
+  - F4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
