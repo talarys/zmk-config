@@ -53,10 +53,10 @@ layers:
   - {t: ▽, type: trans}
   - '['
   - {t: '{', h: LCTRL}
-  - (
+  - {t: (, h: LSHFT}
   - <
   - '>'
-  - )
+  - {t: ), h: LSHIFT}
   - {t: '}', h: LCTRL}
   - ']'
   - ;
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&gaming_switch'
   - LEFT
   - DOWN
   - UP
@@ -177,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ESC
+  - {t: ▽, type: trans}
   - LCTRL
   - Z
   - X
@@ -189,12 +189,52 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&gaming_switch'
-  - ESC
-  - LALT
+  - {t: ▽, type: trans}
+  - Gaming2
   - SPACE
+  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Gaming2:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - T
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - G
+  - F1
+  - F2
+  - F3
+  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [34, 35]
   k: {t: CAPS, h: LEFT SHIFT}
+  l: [Base]
