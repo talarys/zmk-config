@@ -156,6 +156,7 @@
         Shift {
             bindings = <&mt LEFT_SHIFT CAPS>;
             key-positions = <34 35>;
+            layers = <0>;
         };
     };
 
@@ -174,10 +175,10 @@
 
         Sym {
             bindings = <
-        &kp EXCL  &kp AT     &kp HASH         &kp DLLR              &kp PRCNT    &kp CARET      &kp PLUS   &kp ASTRK        &kp AMPERSAND  &kp COLON
-        &trans    &kp LBKT   &hml LCTRL LBRC  &kp LEFT_PARENTHESIS  &kp LT       &kp GT         &kp RPAR   &hmr LCTRL RBRC  &kp RBKT       &kp SEMI
-&trans  &trans    &kp GRAVE  &kp BSLH         &kp EQUAL             &kp TILDE    &kp UNDER      &kp MINUS  &kp SLASH        &kp PIPE       &kp QUESTION  &trans
-                             &trans           &trans                &trans       &kp BACKSPACE  &kp DEL    &trans
+        &kp EXCL  &kp AT     &kp HASH         &kp DLLR         &kp PRCNT    &kp CARET      &kp PLUS          &kp ASTRK        &kp AMPERSAND  &kp COLON
+        &trans    &kp LBKT   &hml LCTRL LBRC  &hml LSHFT LPAR  &kp LT       &kp GT         &hmr LSHIFT RPAR  &hmr LCTRL RBRC  &kp RBKT       &kp SEMI
+&trans  &trans    &kp GRAVE  &kp BSLH         &kp EQUAL        &kp TILDE    &kp UNDER      &kp MINUS         &kp SLASH        &kp PIPE       &kp QUESTION  &trans
+                             &trans           &trans           &trans       &kp BACKSPACE  &kp DEL           &trans
             >;
         };
 
@@ -192,19 +193,28 @@
 
         Nav {
             bindings = <
-        &trans  &trans     &trans     &trans     &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp HOME
-        &trans  &trans     &trans     &trans     &trans    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &mkp MB3
-&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp END   &trans
-                           &trans     &trans     &trans    &mkp MB1        &mkp MB2        &mkp MB3
+        &trans  &trans     &trans     &trans     &trans            &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp HOME
+        &trans  &trans     &trans     &trans     &gaming_switch    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &mkp MB3
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp END   &trans
+                           &trans     &trans     &trans            &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
         Gaming {
             bindings = <
-         &kp TAB    &kp Q  &kp W    &kp E     &kp R        &trans  &trans  &trans  &trans  &trans
-         &kp LSHFT  &kp A  &kp S    &kp D     &kp F        &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp LCTRL  &kp Z  &kp X    &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &gaming_switch
-                           &kp ESC  &kp LALT  &kp SPACE    &trans  &trans  &trans
+        &kp TAB    &kp Q  &kp W   &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &gaming_switch
+                          &trans  &mo 5  &kp SPACE    &to 0   &trans  &trans
+            >;
+        };
+
+        Gaming2 {
+            bindings = <
+        &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4      &trans  &trans  &trans  &trans  &trans
+        &kp T    &kp N5  &kp N6  &kp N7  &kp N8      &trans  &trans  &trans  &trans  &trans
+&trans  &kp G    &kp F1  &kp F2  &kp F3  &kp LALT    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
     };
