@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Nav:
-  - {t: ▽, type: trans}
+  - '&swapper'
   - MUTE
   - PAGE UP
   - PLAY PAUSE
@@ -196,7 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Gaming2:
-  - Alt+TAB
+  - '&swapper'
   - '1'
   - '2'
   - '3'
