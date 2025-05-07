@@ -154,27 +154,6 @@
             #binding-cells = <0>;
             bindings = <&hold_sticky LSHIFT LSHIFT>, <&kp CAPS>;
         };
-
-        sticky_shift: hold_tap {
-            compatible = "zmk,hold-tap";
-            label = "STICKY_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&sk>;
-
-            // Hold: Regular Shift, Tap: Sticky Shift
-
-            hold-trigger-key-positions = <>;
-        };
-
-        magic_shift: tap_dance {
-            compatible = "zmk,tap-dance";
-            label = "TD_SHIFT_CAPS";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&sticky_shift LSHIFT LSHIFT>, <&kp CAPS>;
-        };
     };
 
     combos { compatible = "zmk,combos"; };
