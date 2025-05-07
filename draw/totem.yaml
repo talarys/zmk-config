@@ -37,7 +37,7 @@ layers:
   - {t: TAB, h: Nav}
   - {t: SPACE, h: Sym}
   - {t: ENTER, h: Num}
-  - {t: ESC, h: LSHIFT}
+  - LSHIFT
   - {t: ▽, type: trans}
   Sym:
   - '!'
@@ -50,7 +50,7 @@ layers:
   - '*'
   - '&'
   - ':'
-  - {t: ▽, type: trans}
+  - ESC
   - '['
   - {t: '{', h: LCTRL}
   - {t: (, h: LSHFT}
