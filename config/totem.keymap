@@ -97,24 +97,6 @@
             hold-trigger-on-release;
         };
 
-        lpar_lt: lpar_lt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_LT";
-            bindings = <&kp LPAR>, <&kp LT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        rpar_gt: rpar_gt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RPAR_GT";
-            bindings = <&kp RPAR>, <&kp GT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         comma_semic: comma_semic {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMIC";
@@ -156,6 +138,25 @@
 
             ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;
         };
+
+        sticky_shift: hold_tap {
+            compatible = "zmk,hold-tap";
+            label = "STICKY_SHIFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&sk>;
+            // Hold: Regular Shift, Tap: Sticky Shift
+            hold-trigger-key-positions = <>;
+        };
+
+        magic_shift: tap_dance {
+            compatible = "zmk,tap-dance";
+            label = "TD_SHIFT_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sticky_shift LSHIFT LSHIFT>, <&kp CAPS>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -169,7 +170,7 @@
                 &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I         &kp O        &kp P
                 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SINGLE_QUOTE
 &gaming_switch  &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &comma_semic  &dot_colon   &kp SLASH               &gaming_switch
-                                          &trans        &lt 3 TAB      &lt 1 SPACE    &lt 2 ENTER  &kp LSHIFT    &trans
+                                          &trans        &lt 3 TAB      &lt 1 SPACE    &lt 2 ENTER  &magic_shift  &trans
             >;
         };
 
