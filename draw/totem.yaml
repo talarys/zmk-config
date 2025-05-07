@@ -139,7 +139,7 @@ layers:
   - RIGHT
   - '&mkp MB3'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
