@@ -200,17 +200,17 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '4'
+  - T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESC
+  - '4'
   - '5'
   - '6'
-  - '7'
-  - '8'
+  - G
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,7 +221,7 @@ layers:
   - F1
   - F2
   - F3
-  - F4
+  - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -234,7 +234,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [34, 35]
-  k: {t: CAPS, h: LEFT SHIFT}
-  l: [Base]
