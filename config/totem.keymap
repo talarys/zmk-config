@@ -139,6 +139,22 @@
             ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;
         };
 
+        hold_sticky: hold_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_STICKY";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        magic_shift: magic_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MAGIC_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&hold_sticky LSHIFT LSHIFT>, <&kp CAPS>;
+        };
+
         sticky_shift: hold_tap {
             compatible = "zmk,hold-tap";
             label = "STICKY_SHIFT";
@@ -146,7 +162,9 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&sk>;
+
             // Hold: Regular Shift, Tap: Sticky Shift
+
             hold-trigger-key-positions = <>;
         };
 
