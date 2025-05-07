@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
   - {t: '''', h: RGUI}
-  - {t: ▽, type: trans}
+  - '&gaming_switch'
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - /
-  - {t: ▽, type: trans}
+  - '&gaming_switch'
   - {t: ▽, type: trans}
   - {t: TAB, h: Nav}
   - {t: SPACE, h: Sym}
@@ -128,10 +128,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHIFT
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -188,11 +188,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&gaming_switch'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gaming2
   - SPACE
-  - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Gaming2:
