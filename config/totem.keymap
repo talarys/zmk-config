@@ -152,7 +152,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MAGIC_SHIFT";
             #binding-cells = <0>;
-            bindings = <&hold_sticky LSHIFT LSHIFT>, <&kp CAPS>;
+            bindings = <&hold_sticky LSHIFT LSHIFT>, <&caps_word>;
         };
     };
 
