@@ -191,10 +191,10 @@
 
         Nav {
             bindings = <
-        &swapper   &trans     &trans     &trans      &trans    &trans          &trans          &trans        &trans           &trans
+        &swapper   &trans     &trans     &trans      &trans    &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
         &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT  &trans    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)   &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-                              &trans     &trans      &trans    &trans          &trans          &trans
+                              &trans     &trans      &trans    &kp BACKSPACE   &kp DELETE      &trans
             >;
         };
 
@@ -207,7 +207,7 @@
             >;
         };
 
-        Gaming2 {
+        GamingNum {
             bindings = <
         &swapper      &kp N1  &kp N2  &kp N3  &kp T     &trans  &trans  &trans  &trans  &trans
         &kp ESC       &kp N4  &kp N5  &kp N6  &kp G     &trans  &trans  &trans  &trans  &trans
