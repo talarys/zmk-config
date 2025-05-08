@@ -123,10 +123,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
   - {t: ▽, type: trans}
   - LGUI
   - LALT
@@ -153,8 +153,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - DELETE
   - {t: ▽, type: trans}
   Gaming:
   - TAB
@@ -190,12 +190,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gaming2
+  - GamingNum
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Gaming2:
+  GamingNum:
   - '&swapper'
   - '1'
   - '2'
