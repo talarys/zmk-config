@@ -21,7 +21,7 @@ layers:
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - '&gaming_switch'
+  - {t: Gaming, h: Switch}
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - /
-  - '&gaming_switch'
+  - {t: Gaming, h: Switch}
   - {type: trans}
   - {t: Tab, h: Nav}
   - {t: Spc, h: Sym}
