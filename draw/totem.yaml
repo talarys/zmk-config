@@ -38,7 +38,7 @@ layers:
   - {t: Spc, h: Sym}
   - {t: ENTER, h: Num}
   - {t: Magic, h: Shift}
-  - {type: trans}
+  - {t: ColemakDH, h: toggle}
   Sym:
   - '!'
   - '@'
@@ -156,6 +156,45 @@ layers:
   - BACKSPACE
   - DELETE
   - {type: trans}
+  ColemakDH:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - {type: trans}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   Gaming:
   - Tab
   - Q
@@ -216,7 +255,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - Gaming
   - LEFT ALT
   - F1
   - F2
@@ -227,7 +266,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - Gaming
   - {type: trans}
   - {type: held}
   - {type: trans}
