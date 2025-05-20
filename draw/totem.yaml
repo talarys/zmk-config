@@ -3,32 +3,32 @@ layers:
   Base:
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
   - {t: A, h: Gui}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
-  - {t: F, h: LSHIFT}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: LSHIFT}
   - G
-  - H
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: '''', h: Gui}
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
   - Gaming
   - Z
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - /
@@ -38,7 +38,7 @@ layers:
   - {t: Spc, h: Sym}
   - {t: ENTER, h: Num}
   - {t: Magic, h: Shift}
-  - {t: ColemakDH, h: toggle}
+  - {type: trans}
   Sym:
   - '!'
   - '@'
@@ -155,45 +155,6 @@ layers:
   - {type: trans}
   - BACKSPACE
   - DELETE
-  - {type: trans}
-  ColemakDH:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - A
-  - R
-  - S
-  - T
-  - G
-  - M
-  - N
-  - E
-  - I
-  - O
-  - {type: trans}
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - ','
-  - .
-  - /
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: trans}
   Gaming:
   - Tab
