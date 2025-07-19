@@ -21,7 +21,7 @@ layers:
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - Gaming
+  - {type: trans}
   - Z
   - X
   - C
