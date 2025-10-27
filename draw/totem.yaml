@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LEFT WIN}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: Ctrl}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ''''
+  - {t: J, h: LEFT SHIFT}
+  - {t: K, h: LEFT CONTROL}
+  - {t: L, h: LEFT ALT}
+  - {t: '''', h: LEFT WIN}
   - Gaming
   - Z
   - X
