@@ -40,7 +40,7 @@ layers:
   - {t: Magic, h: Shift}
   - {type: trans}
   Sym:
-  - {type: trans}
+  - '!'
   - '@'
   - '#'
   - $
@@ -49,7 +49,7 @@ layers:
   - +
   - '*'
   - '&'
-  - {type: trans}
+  - ':'
   - {type: trans}
   - '['
   - {t: '{', h: Ctrl}
@@ -70,7 +70,7 @@ layers:
   - '-'
   - /
   - '|'
-  - {type: trans}
+  - '?'
   - {type: trans}
   - {type: trans}
   - {type: trans}
