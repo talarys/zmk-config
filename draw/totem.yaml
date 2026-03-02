@@ -1,0 +1,236 @@
+layout: {zmk_keyboard: totem}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LEFT WIN}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: Ctrl}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: LEFT SHIFT}
+  - {t: K, h: LEFT CONTROL}
+  - {t: L, h: LEFT ALT}
+  - {t: '''', h: LEFT WIN}
+  - Gaming
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '!', s: '?'}
+  - Gaming
+  - {type: trans}
+  - {t: Tab, h: Nav}
+  - {t: Spc, h: Sym}
+  - {t: ENTER, h: Num}
+  - {t: Magic, h: Shift}
+  - {type: trans}
+  Sym:
+  - {type: trans}
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - +
+  - '*'
+  - '&'
+  - {type: trans}
+  - {type: trans}
+  - '['
+  - {t: '{', h: Ctrl}
+  - {t: (, h: Shift}
+  - <
+  - '>'
+  - {t: ), h: LSHIFT}
+  - {t: '}', h: Ctrl}
+  - ']'
+  - ;
+  - {type: trans}
+  - {type: trans}
+  - '`'
+  - \
+  - '='
+  - '~'
+  - _
+  - '-'
+  - /
+  - '|'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - BACKSPACE
+  - Del
+  - {type: trans}
+  Num:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - F11
+  - F12
+  - LSHIFT
+  - Ctrl
+  - Alt
+  - Gui
+  - {type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  Nav:
+  - Next Win
+  - $$mdi:skip-backward$$
+  - PLAY PAUSE
+  - $$mdi:skip-forward$$
+  - $$mdi:volume-high$$
+  - Home
+  - PgDn
+  - PgUp
+  - End
+  - PRINTSCREEN
+  - {t: ESCAPE, h: Gui}
+  - Alt
+  - Ctrl
+  - LSHIFT
+  - $$mdi:volume-medium$$
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {type: trans}
+  - {type: trans}
+  - Ctl+Z
+  - Cut
+  - Copy
+  - Ctl+V
+  - $$mdi:volume-off$$
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - BACKSPACE
+  - DELETE
+  - {type: trans}
+  Gaming:
+  - Tab
+  - Q
+  - W
+  - E
+  - R
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Ctrl
+  - Z
+  - X
+  - C
+  - V
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - GamingNum
+  - Spc
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  GamingNum:
+  - Next Win
+  - '1'
+  - '2'
+  - '3'
+  - T
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Esc
+  - '4'
+  - '5'
+  - '6'
+  - G
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - LEFT ALT
+  - F1
+  - F2
+  - F3
+  - B
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}

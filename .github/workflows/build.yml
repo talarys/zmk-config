@@ -1,11 +1,49 @@
-name: Build ZMK firmware
+name: Build ZMK firmware (nix)
 on:
   workflow_dispatch:
-  # push:
-  #   paths:
-  #     - config/**
-  #     - build.yaml
+  push:
+    paths:
+      - config/**
+      - build.yaml
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: urob/zmk-actions/.github/workflows/build-user-config.yml@v4
+    with:
+      toolchain: zephyr
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+
+      - name: Compress artifacts
+        run: zip -rj firmware.zip ./artifacts/firmware/
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_id }}
+          release_name: Build ${{ github.run_id }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./firmware.zip
+          asset_name: firmware.zip
+          asset_content_type: application/zip
