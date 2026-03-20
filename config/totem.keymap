@@ -163,7 +163,7 @@
                 &kp Q            &kp W            &kp E         &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P
                 &hml LEFT_WIN A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G          &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_WIN SQT
 &gaming_switch  &kp Z            &kp X            &kp C         &kp V              &kp B          &kp N        &kp M              &comma_semic         &dot_colon       &ex_que            &gaming_switch
-                                                  &trans        &lt 3 TAB          &lt 1 SPACE    &lt 2 ENTER  &magic_shift       &trans
+                                                  &mo 6         &lt 3 TAB          &lt 1 SPACE    &lt 2 ENTER  &magic_shift       &trans
             >;
         };
 
@@ -209,6 +209,15 @@
         &kp ESC       &kp N4  &kp N5  &kp N6  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                               &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Numpad {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
