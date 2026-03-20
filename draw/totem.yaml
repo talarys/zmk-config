@@ -33,7 +33,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '!', s: '?'}
   - Gaming
-  - {type: trans}
+  - Numpad
   - {t: Tab, h: Nav}
   - {t: Spc, h: Sym}
   - {t: ENTER, h: Num}
@@ -230,6 +230,45 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Numpad:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP 0
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
