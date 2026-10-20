@@ -1,0 +1,7 @@
+.west/
+build/
+modules/
+optional/
+zephyr/
+zmk/
+zmk-tri-state/
