@@ -454,8 +454,11 @@ copy_artifacts() {
 
   # Copy all artifacts from YAML config
   while IFS='|' read -r board shield snippet cmake_args artifact_name; do
+    # Board specs can contain a variant separator (e.g. xiao_ble//zmk), which is
+    # valid in a build path but not in a file name. Mirror ZMK CI: '/' -> '_'.
+    local out_name="${artifact_name//\//_}"
     local src_file="./build/${artifact_name}/zephyr/zmk.uf2"
-    local dst_file="$DEST/${artifact_name}.uf2"
+    local dst_file="$DEST/${out_name}.uf2"
 
     if [ -f "$src_file" ]; then
       cp "$src_file" "$dst_file"
